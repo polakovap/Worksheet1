@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            //PrintIntegersFor();
-            //PrintIntegersWhile();
-            //PrintIntegersDo();
+            PrintIntegersFor();
+            PrintIntegersWhile();
+            PrintIntegersDo();
             PrintExcludingFor();
         }
 
@@ -43,13 +43,9 @@
         {
             for (int i = 40; i <= 60; i++)
             {
-                if (i == 46 || i == 48)
+                if (i != 46 && i != 48)
                 {
-                    
-                }
-                else
-                { 
-                    Console.WriteLine($"{i}"); 
+                    Console.WriteLine($"{i}");
                 }
             }
             return 0;
