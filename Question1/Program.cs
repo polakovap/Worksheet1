@@ -8,6 +8,7 @@
             PrintIntegersWhile();
             PrintIntegersDo();
             PrintExcludingFor();
+            PrintDescendingFor();
         }
 
         static int PrintIntegersFor()
@@ -47,6 +48,14 @@
                 {
                     Console.WriteLine($"{i}");
                 }
+            }
+            return 0;
+        }
+        static int PrintDescendingFor()
+        {
+            for (int i = 60; i >= 40; i--)
+            {
+                Console.WriteLine($"{i}");
             }
             return 0;
         }
