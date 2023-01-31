@@ -1,9 +1,14 @@
-﻿namespace Question1
+﻿/* Name: Petra Poláková
+ * Date: 25/01/2023
+ * Description: practicing the knowledge of methods and loops from semester 1
+ */
+namespace Question1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            //call out the methods
             PrintIntegersFor();
             PrintIntegersWhile();
             PrintIntegersDo();
@@ -11,7 +16,7 @@
             PrintDescendingFor();
         }
 
-        static int PrintIntegersFor()
+        static int PrintIntegersFor() //a method which prints all the numbers between 40 and 60 using for loop
         {
             for (int i = 40; i <= 60; i++)
             {
@@ -19,7 +24,7 @@
             }
             return 0;
         }
-        static int PrintIntegersWhile()
+        static int PrintIntegersWhile() //a method which prints all the numbers between 40 and 60 using while loop
         {
             int i = 40;
             while (i <= 60)
@@ -29,7 +34,7 @@
             }
             return 0;
         }
-        static int PrintIntegersDo()
+        static int PrintIntegersDo() //a method which prints all the numbers between 40 and 60 using do while loop
         {
             int i = 40;
             do
@@ -40,7 +45,7 @@
             while (i <= 60);
             return 0;
         }
-        static int PrintExcludingFor()
+        static int PrintExcludingFor() //a method which prints all the numbers between 40 and 60 except 46 and 48
         {
             for (int i = 40; i <= 60; i++)
             {
@@ -51,7 +56,7 @@
             }
             return 0;
         }
-        static int PrintDescendingFor()
+        static int PrintDescendingFor() //a method which prints all the numbers between 40 and 60 from largest to smallest
         {
             for (int i = 60; i >= 40; i--)
             {
